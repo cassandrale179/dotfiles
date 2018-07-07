@@ -4,25 +4,25 @@ filetype off                  " required
 "Vundle package management"
 set rtp+=~/dotfiles/vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'VundleVim/Vundle.vim' 
-Plugin 'tpope/vim-fugitive' 
-Plugin 'flazz/vim-colorschemes' 
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'itchyny/lightline.vim'
-Plugin 'leafgarland/typescript-vim' 
+Plugin 'leafgarland/typescript-vim'
 Plugin 'ap/vim-css-color'
-Plugin 'vim-syntastic/syntastic' 
+Plugin 'vim-syntastic/syntastic'
 Plugin 'keith/swift.vim'
-call vundle#end() 
+call vundle#end()
 
-"Set filetype" 
-filetype plugin indent on 
+"Set filetype"
+filetype plugin indent on
 
 "Set color scheme"
-:colorscheme railscasts  
+:colorscheme railscasts
 :set cursorline
-:hi CursorLine term=bold cterm=bold guibg=Grey40 
+:hi CursorLine term=bold cterm=bold guibg=Grey40
 
-"Turn on syntax highlighting and autoclose bracket" 
+"Turn on syntax highlighting and autoclose bracket"
 :syntax on
 :ino " ""<left>
 :ino ' ''<left>
@@ -45,20 +45,20 @@ filetype plugin indent on
 :set autoindent
 
 "Turn on line number"
-:set number 
+:set number
 
 "Set mouse active"
 :set mouse=a
 :set showcmd
-:set showmatch 
+:set showmatch
 
 "Backspace customization"
 :set backspace=2
-:set backspace=indent,eol,start 
+:set backspace=indent,eol,start
 
 "Mapping keys"
 :map <F1> :NERDTreeToggle
-:vmap <BS> dd 
+:vmap <BS> dd
 
 
 "Linter settings"
@@ -68,4 +68,4 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1 
+let g:syntastic_check_on_wq = 1
