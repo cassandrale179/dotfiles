@@ -33,3 +33,9 @@ defaults write com.apple.finder CreateDesktop true; killall Finder
   - copy selected part: visually select text(type v or V in normal mode) and type :w !pbcopy
   - copy the whole file :%w !pbcopy
   - paste from the clipboard :r !pbpaste
+
+
+## Applications
+sh$ sudo sh -c 'echo "path/to/racket/bin" >> /etc/paths.d/racket'
+
+ 
